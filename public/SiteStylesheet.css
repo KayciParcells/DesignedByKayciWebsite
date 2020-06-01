@@ -1,10 +1,10 @@
 body {
-    background-color: aquamarine;
+    background-color: bisque;
 }
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 1rem;
     grid-auto-flow: row;
 }
@@ -28,4 +28,46 @@ img {
     height: 15rem;
     min-width: 100%;
     object-fit: cover;
+}
+
+.navigation .navbar-brand {
+    color: blanchedalmond;
+}
+
+.navigation {
+    background-color: #ddb490;
+}
+
+.nav-path {
+  color: black;
+}
+
+.nav-path:hover {
+  color:olive;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+article {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+}
+
+.grid-wrapper:hover > .thumb {
+    opacity: 0.5;
+}
+
+.grid-wrapper:hover > .thumb:hover {
+    opacity: 1;
 }
