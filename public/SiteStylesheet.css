@@ -1,5 +1,12 @@
 body {
     background-color: bisque;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-family: ltc-globe-gothic, sans-serif;
 }
 
 .grid-wrapper {
@@ -10,11 +17,11 @@ body {
 }
 
 article {
-    background: black;
-    color: whitesmoke;
+    background: #333;
+    color: blanchedalmond;
     position: relative;
     display: block;
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -36,14 +43,12 @@ img {
 
 .navigation {
     background-color: #ddb490;
+    box-shadow: 0px 5px 5px 0px #ddb490;
 }
 
-.nav-path {
-  color: black;
-}
-
-.nav-path:hover {
-  color:olive;
+.nav-link {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
 }
 
 @keyframes appear {
@@ -64,10 +69,20 @@ article {
     animation-direction: forward;
 }
 
-.grid-wrapper:hover > .thumb {
+h4 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.grid-wrapper:hover > article {
     opacity: 0.5;
 }
 
-.grid-wrapper:hover > .thumb:hover {
+.grid-wrapper:hover > article:hover {
     opacity: 1;
+}
+
+.footer-color {
+    background-color: bisque;
 }
