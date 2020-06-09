@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: #e2e2e2;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -7,6 +7,26 @@ body {
 
 h1 {
     font-family: ltc-globe-gothic, sans-serif;
+}
+
+h2 {
+    font-family: goodlife-sans-condensed, sans-serif;
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h5 {
+    font-family: goodlife-script, sans-serif;
+}
+
+.heading {
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 .grid-wrapper {
@@ -18,7 +38,7 @@ h1 {
 
 article {
     background: #333;
-    color: blanchedalmond;
+    color: #e2e2e2;
     position: relative;
     display: block;
     border-radius: 0px;
@@ -38,12 +58,15 @@ img {
 }
 
 .navigation .navbar-brand {
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
+    color: lightsalmon;
+    font-family: goodlife-sans-condensed, sans-serif;
+    font-size: 2rem;
 }
 
 .navigation {
-    background-color: #ddb490;
-    box-shadow: 0px 5px 5px 0px #ddb490;
+    background-color: lightslategray;
+    box-shadow: 0px 5px 5px 0px lightslategray; /* #ddb490; */
 }
 
 .nav-link {
@@ -51,38 +74,6 @@ img {
     font-weight: 300;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-article {
-    animation-name: appear;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: forward;
-}
-
-h4 {
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.grid-wrapper:hover > article {
-    opacity: 0.5;
-}
-
-.grid-wrapper:hover > article:hover {
-    opacity: 1;
-}
-
 .footer-color {
-    background-color: bisque;
+    background-color: #e2e2e2;
 }

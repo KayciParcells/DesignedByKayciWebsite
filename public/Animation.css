@@ -1,0 +1,45 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+article {
+    animation-name: appear;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+}
+
+.grid-wrapper:hover > article {
+    opacity: 0.5;
+}
+
+.grid-wrapper:hover > article:hover {
+    opacity: 1;
+}
+
+@keyframes slideUp {
+  0% {
+        opacity:0;
+        transform:  translate(0px,50px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+}
+
+.slide-up {
+    animation-name: slideUp;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+}
