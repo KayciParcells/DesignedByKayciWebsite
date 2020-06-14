@@ -48,17 +48,12 @@ article {
 .thumbnail {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
-}
-
-img {
     height: 15rem;
     min-width: 100%;
     object-fit: cover;
 }
 
 .navigation .navbar-brand {
-    /* color: blanchedalmond; */
     color: lightsalmon;
     font-family: goodlife-sans-condensed, sans-serif;
     font-size: 2rem;
@@ -76,4 +71,17 @@ img {
 
 .footer-color {
     background-color: #e2e2e2;
+}
+
+.circle-image {
+    border-radius: 8rem;
+    width: 80%;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orange-title {
+    color: lightsalmon;
 }
