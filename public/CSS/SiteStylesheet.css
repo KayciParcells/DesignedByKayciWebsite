@@ -1,17 +1,19 @@
 body {
-    background-color: #dad6d6;/*#e2e2e2;*/
-    font-family: brandon-grotesque, sans-serif;
+    background-color: #F2E6D8;/*#b6c1d3;/*#c1dbd4;/*#4abdac;/*#f0e8d4;/*#dad6d6;/*#e2e2e2;*/
+    font-family: proxima-nova, brandon-grotesque, sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
+    color: #333;
 }
 
 h1 {
-    font-family: ltc-globe-gothic, serif;
+    font-family: proxima-nova, ltc-globe-gothic, serif;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-family: goodlife-sans-condensed, serif;
-    font-size: 2.2rem;
+    font-family: freight-text-pro, goodlife-sans-condensed, serif;
+    font-size: 1.4rem;
 }
 
 h4 {
@@ -46,23 +48,19 @@ article {
 }
 
 .navigation .navbar-brand {
-    color: #fc7753;/*lightsalmon;*/
-    font-family: goodlife-sans-condensed, serif;
+    color: #F2E6D8;/*#f2714f;/*#fc7753;/*lightsalmon;*/
+    font-family: jubilat, goodlife-sans-condensed, serif;
     font-size: 2rem;
 }
 
-.navigation {
-    background-color: #6c648b;/*lightslategray;*/
-    box-shadow: 5px 15px 15px -10px #6c648b; /*#6c648b;*/
-}
-
 .nav-link {
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 300;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .footer-color {
-    background-color: #dad6d6;
+    background-color: #F2E6D8;
 }
 
 .orange-title {
@@ -71,8 +69,8 @@ article {
 }
 
 .blue-title {
-    color: #155765;/*#02c8a7;*/
-    font-family: goodlife-sans-condensed, serif;
+    color: #333;
+    font-family: freight-text-pro, goodlife-sans-condensed, serif;
 }
 
 .column-background {
@@ -85,9 +83,20 @@ article {
 }
 
 .font-black {
-    color: black;
+    color: #333;
 }
 
 a:hover {
     color: lightslategray;
+}
+
+.color-block {
+    width: 0;
+    height: 0;
+    border-top: 100vw solid #f2714f;
+    border-left: 100vw solid transparent;
+}
+
+.mt-10rem {
+    margin-top: 7rem;
 }
