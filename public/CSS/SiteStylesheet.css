@@ -1,6 +1,6 @@
 body {
-    background-color: #F2E6D8;/*#b6c1d3;/*#c1dbd4;/*#4abdac;/*#f0e8d4;/*#dad6d6;/*#e2e2e2;*/
-    font-family: proxima-nova, brandon-grotesque, sans-serif;
+    background-color: #F2E6D8;
+    font-family: brandon-grotesque, sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     color: #333;
@@ -12,14 +12,8 @@ h1 {
 }
 
 h2 {
-    font-family: freight-text-pro, goodlife-sans-condensed, serif;
+    font-family: proxima-nova, freight-text-pro, goodlife-sans-condensed, serif;
     font-size: 1.4rem;
-}
-
-h4 {
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 300;
-    font-style: italic;
 }
 
 h5 {
@@ -31,24 +25,14 @@ h5 {
     padding-right: 30%;
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 1rem;
-    grid-auto-flow: row;
-}
-
-article {
-    background: #333;
-    color: #e2e2e2;
-    position: relative;
-    display: block;
-    border-radius: 0px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+.navigation .navbar-brand-orange {
+    color: #f2714f;
+    font-family: jubilat, goodlife-sans-condensed, serif;
+    font-size: 2rem;
 }
 
 .navigation .navbar-brand {
-    color: #F2E6D8;/*#f2714f;/*#fc7753;/*lightsalmon;*/
+    color: #F2E6D8;
     font-family: jubilat, goodlife-sans-condensed, serif;
     font-size: 2rem;
 }
@@ -63,23 +47,8 @@ article {
     background-color: #F2E6D8;
 }
 
-.orange-title {
-    color: lightsalmon;
-    font-family: goodlife-sans-condensed, sans-serif;
-}
-
-.blue-title {
-    color: #333;
-    font-family: freight-text-pro, goodlife-sans-condensed, serif;
-}
-
 .column-background {
     background-color: lightslategray;
-}
-
-.item-center {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .font-black {
@@ -87,7 +56,7 @@ article {
 }
 
 a:hover {
-    color: lightslategray;
+    color: black;
 }
 
 .color-block {
@@ -98,5 +67,21 @@ a:hover {
 }
 
 .mt-10rem {
-    margin-top: 7rem;
+    margin-top: 5rem;
+}
+
+.grey-hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+.light-grey-hr {
+    border: none;
+    height: 1px;
+    background-color: #79736c;
+}
+
+.column-grey {
+    background-color: #2f3031;
 }
