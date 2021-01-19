@@ -66,6 +66,13 @@ a:hover {
     border-left: 100vw solid transparent;
 }
 
+.color-block-small {
+    border-top: 40vw solid #f2714f;
+    border-left: 50vw solid transparent;
+    top: 0px;
+    right: 0px;
+}
+
 .mt-10rem {
     margin-top: 5rem;
 }
@@ -84,4 +91,9 @@ a:hover {
 
 .column-grey {
     background-color: #2f3031;
+}
+
+.caption {
+    font-family: jubilat, serif;
+    font-size: .8rem;
 }
