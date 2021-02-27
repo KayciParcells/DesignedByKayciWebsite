@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Designed By Kayci</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/wkd3cjg.css">
+  <link rel="stylesheet" href="https://use.typekit.net/joo0gbi.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/SiteStylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/Animation.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/ImageManipulation.css">
+    
+    
+    <!-- https://maxl.us/hide-related -->
+<style>
+    .hytPlayerWrap {
+    position:relative!important;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+    display: block!important;
+    }
+    .hytPlayerWrap iframe, .hytPlayerWrap object, .hytPlayerWrap embed {
+position:absolute;
+top:0;
+left:0;
+width: 100%!important;
+height:100%;
+}
+    .hytPlayerWrap.ended::after {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 64px 64px;
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+    }
+    .hytPlayerWrap.paused::after {
+        content:"";
+        position: absolute;
+        top: 70px;
+        left: 0;
+        bottom: 50px;
+        right: 0;
+        cursor: pointer;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 40px 40px;
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+    }
+</style>
+<script>
+    "use strict";
+    document.addEventListener('DOMContentLoaded', function() {
+        // Activate only if not already activated
+        if (window.hideYTActivated) return;
+        // Activate on all players
+        let onYouTubeIframeAPIReadyCallbacks = [];
+        for (let playerWrap of document.querySelectorAll(".hytPlayerWrap")) {
+            let playerFrame = playerWrap.querySelector("iframe");
+            
+            let tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            let firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            
+            let onPlayerStateChange = function(event) {
+                if (event.data == YT.PlayerState.ENDED) {
+                    playerWrap.classList.add("ended");
+                } else if (event.data == YT.PlayerState.PAUSED) {
+                    playerWrap.classList.add("paused");
+                } else if (event.data == YT.PlayerState.PLAYING) {
+                    playerWrap.classList.remove("ended");
+                    playerWrap.classList.remove("paused");
+                }
+            };
+            
+            let player;
+            onYouTubeIframeAPIReadyCallbacks.push(function() {
+                player = new YT.Player(playerFrame, {
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            });
+          
+            playerWrap.addEventListener("click", function() {
+                let playerState = player.getPlayerState();
+                if (playerState == YT.PlayerState.ENDED) {
+                    player.seekTo(0);
+                } else if (playerState == YT.PlayerState.PAUSED) {
+                    player.playVideo();
+                }
+            });
+        }
+        
+        window.onYouTubeIframeAPIReady = function() {
+            for (let callback of onYouTubeIframeAPIReadyCallbacks) {
+                callback();
+            }
+        };
+        
+        window.hideYTActivated = true;
+    });
+</script>
+    
+    
+</head>
+<body>
+
+<div class="position-relative">
+<div class="container">
+<div class="position-absolute color-block-small"></div>
+    
+<nav class="navbar navbar-expand-sm navbar-light navigation pb-0">
+  <div class="container px-4 pt-1">
+      <a class="navbar-brand-orange" href="../index.html">Kayci Parcells</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <div class="navbar-nav">
+              <div>
+                  <a class="nav-link" href="../index.html">Works</a>
+                  </div>
+                  <div class="nav-link d-none d-md-block">//</div>
+                  <div>
+                  <a class="nav-link" href="../about.html">About</a>
+              </div>
+          </div>
+      </div>  
+  </div>
+</nav>
+</div>
+</div>        
+    
+<div class="container mt-0" role="main">
+  <div class="row pt-md-5 pt-3">
+    <div class="col-12 col-md-5 order-2">
+    <h1>Kaleidoscope</h1>
+    <p class="font-italic">Archive Project</p>
+    </div>
+    <div class="img-column order-1 col-12 col-md-7 mb-4 column-grey py-3">
+       <!-- <div class="embed-responsive embed-responsive-16by9">-->
+            <div class="hytPlayerWrapOuter">
+    <div class="hytPlayerWrap">
+        <iframe
+            src="https://www.youtube.com/embed/NQ6Urim42m4?rel=0&enablejsapi=1" class=""
+        ></iframe>
+    </div>
+</div>
+  <!--<iframe class="embed-responsive-item" src="https://youtube.com/embed/NQ6Urim42m4?re;=0" allowfullscreen allow="gyroscope; autoplay"></iframe>-->
+<!--</div>-->
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-right footer-color container">
+    <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6 caption">
+  <p>Important Credit: Code written by Maximillian Laumeister was used on this page to prevent Youtube from suggesting further videos at the end of the embedded video. This code can be found at <a href="https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/" class="font-black">https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/</a></p></div></div>
+</div>
+
+  
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
