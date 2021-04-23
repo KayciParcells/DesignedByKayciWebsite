@@ -12,111 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../CSS/SiteStylesheet.css">
   <link rel="stylesheet" type="text/css" href="../CSS/Animation.css">
-  <link rel="stylesheet" type="text/css" href="../CSS/ImageManipulation.css">
-    
-    
-    <!-- https://maxl.us/hide-related -->
-<style>
-    .hytPlayerWrap {
-    position:relative!important;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
-    display: block!important;
-    }
-    .hytPlayerWrap iframe, .hytPlayerWrap object, .hytPlayerWrap embed {
-position:absolute;
-top:0;
-left:0;
-width: 100%!important;
-height:100%;
-}
-    .hytPlayerWrap.ended::after {
-        content:"";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        cursor: pointer;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-position: center; 
-        background-size: 64px 64px;
-        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
-    }
-    .hytPlayerWrap.paused::after {
-        content:"";
-        position: absolute;
-        top: 70px;
-        left: 0;
-        bottom: 50px;
-        right: 0;
-        cursor: pointer;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-position: center; 
-        background-size: 40px 40px;
-        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
-    }
-</style>
-<script>
-    "use strict";
-    document.addEventListener('DOMContentLoaded', function() {
-        // Activate only if not already activated
-        if (window.hideYTActivated) return;
-        // Activate on all players
-        let onYouTubeIframeAPIReadyCallbacks = [];
-        for (let playerWrap of document.querySelectorAll(".hytPlayerWrap")) {
-            let playerFrame = playerWrap.querySelector("iframe");
-            
-            let tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            let firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            
-            let onPlayerStateChange = function(event) {
-                if (event.data == YT.PlayerState.ENDED) {
-                    playerWrap.classList.add("ended");
-                } else if (event.data == YT.PlayerState.PAUSED) {
-                    playerWrap.classList.add("paused");
-                } else if (event.data == YT.PlayerState.PLAYING) {
-                    playerWrap.classList.remove("ended");
-                    playerWrap.classList.remove("paused");
-                }
-            };
-            
-            let player;
-            onYouTubeIframeAPIReadyCallbacks.push(function() {
-                player = new YT.Player(playerFrame, {
-                    events: {
-                        'onStateChange': onPlayerStateChange
-                    }
-                });
-            });
-          
-            playerWrap.addEventListener("click", function() {
-                let playerState = player.getPlayerState();
-                if (playerState == YT.PlayerState.ENDED) {
-                    player.seekTo(0);
-                } else if (playerState == YT.PlayerState.PAUSED) {
-                    player.playVideo();
-                }
-            });
-        }
-        
-        window.onYouTubeIframeAPIReady = function() {
-            for (let callback of onYouTubeIframeAPIReadyCallbacks) {
-                callback();
-            }
-        };
-        
-        window.hideYTActivated = true;
-    });
-</script>
-    
-    
+  <link rel="stylesheet" type="text/css" href="../CSS/ImageManipulation.css">    
 </head>
 <body>
 
@@ -135,7 +31,7 @@ height:100%;
               <div>
                   <a class="nav-link" href="../index.html">Works</a>
                   </div>
-                  <div class="nav-link d-none d-md-block">//</div>
+                  <div class="nav-link d-none d-md-block">–</div>
                   <div>
                   <a class="nav-link" href="../about.html">About</a>
               </div>
@@ -146,31 +42,29 @@ height:100%;
 </div>
 </div>        
     
-<div class="container mt-0" role="main">
+<div class="container mt-0 px-5" role="main">
+    
+    <div class="row pt-md-3">
+        <div class="order-1 col-12 mb-2">
+            <img src="https://lh3.googleusercontent.com/1EeK9xe7vVvDjWL7__h5uwerB3h26hwfb9ErUdNHO6W8mJVmQJUyqX3SJEImDeBkgkmt2IkMFKYjraUyjrSh0gVSUFZmYWTTNwRnDqqYxHd5mVD6Ra1Ymosh7LrS7RjkvKELqMHSnA=w2400" alt="Verneuil's Original Art Deco Patterns" class="img-fluid display-block">
+        </div>
+    </div>
+    
   <div class="row pt-md-5 pt-3">
     <div class="col-12 col-md-5 order-2">
     <h1>Kaleidoscope</h1>
-    <p class="font-italic">This animation was created as an exploration of how a  collection can be reimagined in a new way to be entertaining and engaging. Digitally recreating Verneuil’s 1926 art deco prints allowed for the colorful patterns to be put in motion to music  in fun and creative ways. This further allowed for the development of an upbeat trailer that can catch one’s attention and explain the upcoming events of an exhibition at the New York Public Library.</p>
+    <h3>Motion Graphics</h3>
+    <p>This animation was created as an exploration of how a  collection can be reimagined in a new way to be entertaining and engaging. Digitally recreating Verneuil’s 1926 art deco prints allowed for the colorful patterns to be put in motion to music  in fun and creative ways. This further allowed for the development of an upbeat trailer that can catch one’s attention and explain the upcoming events of an exhibition at the New York Public Library.</p>
     </div>
-    <div class="img-column order-1 col-12 col-md-7 mb-4 column-grey py-3">
-       <!-- <div class="embed-responsive embed-responsive-16by9">-->
-            <div class="hytPlayerWrapOuter">
-    <div class="hytPlayerWrap">
-        <iframe
-            src="https://www.youtube.com/embed/NQ6Urim42m4?rel=0&enablejsapi=1" class=""
-        ></iframe>
-    </div>
-</div>
-
+    <div class="order-1 col-12 col-md-7 mb-4">
+       <div class="embed-responsive embed-responsive-16by9">
+       <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/538455335?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Kaleidoscope"></iframe>
+       </div>
     </div>
   </div>
 </div>
 
 <div class="jumbotron text-right footer-color container">
-    <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6 caption">
-  <p>Important Credit: Code written by Maximillian Laumeister was used on this page to prevent Youtube from suggesting further videos at the end of the embedded video. This code can be found at <a href="https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/" class="font-black">https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/</a></p></div></div>
 </div>
 
   
