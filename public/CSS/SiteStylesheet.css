@@ -61,6 +61,7 @@ h3 {
 
 a:hover {
     color: black;
+    text-decoration: none;
 }
 
 .color-block {
@@ -114,4 +115,20 @@ a:hover {
 .container {
     margin: 0;
     max-width: none;
+}
+
+.pagination-item{
+    font-family: museo-slab, input-mono, monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: .9rem;
+    color: #333;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pagination-item-next {
+    margin-left: auto;
+    justify-content: flex-end;
 }
