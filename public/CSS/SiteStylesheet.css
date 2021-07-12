@@ -44,23 +44,22 @@ h3 {
 .nav-link {
     font-family: museo-slab, input-mono, monospace;
     font-weight: 400;
-    font-style: normal;
+}
+
+.nav-link:hover {
+    color: black;
 }
 
 .footer-color {
     background-color: #ffffff; /*#F2E6D8;*/
 }
 
-.column-background {
-    background-color: lightslategray;
-}
-
-.font-black {
+a {
     color: #333;
 }
 
 a:hover {
-    color: black;
+    color: #f2714f;
     text-decoration: none;
 }
 
@@ -78,38 +77,16 @@ a:hover {
     right: 0px;
 }
 
-.mt-10rem {
-    margin-top: 5rem;
-}
-
 .grey-hr {
     border: none;
     height: 1px;
     background-color: #333;
 }
 
-.light-grey-hr {
-    border: none;
-    height: 1px;
-    background-color: #79736c;
-}
-
-.column-grey {
-    background-color: #2f3031;
-}
-
 .caption {
     font-family: proxima-nova, input-mono, monospace;
     font-size: .8rem;
     font-style: italic;
-}
-
-.vertical-line {
-    border-left: 2px solid #333333;
-    display: block;
-    height: 4rem;
-    margin: 0 auto;
-    width: 2px;
 }
 
 .container {
@@ -120,12 +97,9 @@ a:hover {
 .pagination-item{
     font-family: museo-slab, input-mono, monospace;
     font-weight: 100;
-    font-style: normal;
     font-size: .9rem;
-    color: #333;
     letter-spacing: 4px;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .pagination-item-next {
