@@ -1,0 +1,33 @@
+#exampleModal .modal-content {
+    background: none;
+    border: none;
+}
+  
+#exampleModal .modal-header {
+    border:none;
+    padding-bottom: 0;
+}
+
+span {
+    color: #fff;
+}
+  
+.modal-footer {
+    border: none;
+}
+  
+.carousel-control-prev, .carousel-control-next {
+    font-size: 2rem;
+    top: auto;
+    opacity: 1;
+    bottom: -3.2rem;
+}
+  
+.carousel-control-next-icon,  .carousel-control-prev-icon {
+    height: 2rem;
+    width: 2rem;
+}
+  
+.carousel-indicators {
+    bottom: -4rem;
+}
