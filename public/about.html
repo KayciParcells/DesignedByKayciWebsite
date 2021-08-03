@@ -46,7 +46,7 @@
 <div class="container mt-4 px-5" role="main">
   <div class="row">
     <div class="col-12 slide-up rounded order-2 col-md-7 col-lg-6">
-      <h2 class="blue-title mb-0">About Kayci</h2>
+      <h2 class="blue-title mb-0" id="first-heading">About Kayci</h2>
       <hr class="grey-hr mt-0"/>
       <p>Kayci is creative, curious, and always seeking to learn something new. Her interests lie in illustration (and anything with vector graphics), graphic design, motion graphics, and software development. Her background is currently very technical (BS in Physics and three years as a software developer), but her passion is in design, and she hopes to transition her career in that direction. When she isn't designing, she enjoys running, swimming, and bowling.</p>
       <br/>
@@ -63,7 +63,7 @@
       </p>
     </div>
     <div class="col-12 order-1 col-md-5 col-lg-4 pb-4 image-column pt-1">
-    <img src="https://lh3.googleusercontent.com/loMki8xZTpXH4BsT6oQBZSNVLWLkfWeRgVa_td4A9HM5W-VnPEtUo6yeUE14l8HuluoBqSwMa8jzuvPTLHIxjCGE32SPe-Eef158CtdxQXyUbRhojhIWK0h0RGIz5knEG_bPKxHteg=w2400" alt="Giraffe Illustration" class="image-fluid mw-100">
+    <img id="aboutImage" src="https://lh3.googleusercontent.com/loMki8xZTpXH4BsT6oQBZSNVLWLkfWeRgVa_td4A9HM5W-VnPEtUo6yeUE14l8HuluoBqSwMa8jzuvPTLHIxjCGE32SPe-Eef158CtdxQXyUbRhojhIWK0h0RGIz5knEG_bPKxHteg=w2400" alt="Giraffe Illustration" class="image-fluid mw-100">
   </div>
 </div>
 </div>
@@ -75,14 +75,16 @@
   
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.14.5/firebase-app.js"></script>
+<script src="/__/firebase/8.8.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+<script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
 
 <!-- The standard Performance Monitoring library -->
-<script src="/__/firebase/8.7.1/firebase-performance.js"></script>
+<script src="/__/firebase/8.8.1/firebase-performance.js"></script>
+    
+<script src="/__/firebase/8.8.1/firebase-firestore.js"></script>
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
@@ -90,5 +92,7 @@
 <script> 
     var perf = firebase.performance();
 </script>
+    
+<script type="text/javascript" src="scripts/about.js"></script>
 </body>
 </html>
