@@ -2,7 +2,7 @@
 
 var firestore = firebase.firestore();
 var storage = firebase.storage();
-var pathReference = storage.ref("media/Composition-01.jpg")
+var pathReference = storage.ref("flamelink/media/Composition-01.jpg")
 
 //const docRef = firestore.collection("fl_content").doc("fXJvFXnibGxl7maesHAr");
 const domAboutImage = document.querySelector("#aboutImage");
