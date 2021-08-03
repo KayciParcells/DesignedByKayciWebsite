@@ -1,10 +1,8 @@
-"use strict";
+'use strict';
 
-var firestore = firebase.firestore();
 var storage = firebase.storage();
-var pathReference = storage.ref("flamelink/media/Composition-01.jpg")
-
-const domAboutImage = document.querySelector("#aboutImage");
+var pathReference = storage.ref("flamelink/media/Composition-01.jpg");
+var domAboutImage = document.querySelector("#aboutImage");
 
 window.onload = function () {
     document.getElementById("first-heading").innerHTML = "Kayci Parcells";
