@@ -11,7 +11,7 @@ window.onload = function () {
     console.log("hello world");
     var url = pathReference.getDownloadURL();
     domAboutImage.setAttribute('src', url);
-    }).catch(function (error){
+    }.catch(function (error){
         console.log("error in aboutImage: ", error);
     })
 };
