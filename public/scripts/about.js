@@ -13,5 +13,4 @@ window.onload = function () {
     domAboutImage.setAttribute('src', url);
     }.catch(function (error){
         console.log("error in aboutImage: ", error);
-    })
-};
+    });
