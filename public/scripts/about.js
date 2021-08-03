@@ -1,13 +1,5 @@
 'use strict';
 
-var firebaseConfig = {
-        apiKey: 'AIzaSyCdxP7dzSDtOfqOXUNmvXbIwYmLvuPhEis',
-        authDomain: 'designed-by-kayci.firebaseapp.com',
-        databaseURL: 'https://designed-by-kayci.firebaseio.com',
-        storageBucket: 'designed-by-kayci.appspot.com'
-};
-firebase.initializeApp(firebaseConfig);
-
 var storage = firebase.storage();
 var pathReference = storage.ref("flamelink/media/Composition-01.jpg");
 var domAboutImage = document.querySelector("#aboutImage");
