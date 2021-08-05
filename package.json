@@ -1,0 +1,22 @@
+{
+  "name": "designedbykayciwebsite",
+  "version": "1.0.0",
+  "description": "This is a simple portfolio website to display my work.",
+  "main": "public/scripts/index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayciParcells/DesignedByKayciWebsite.git"
+  },
+  "author": "Kayci Parcells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KayciParcells/DesignedByKayciWebsite/issues"
+  },
+  "homepage": "https://github.com/KayciParcells/DesignedByKayciWebsite#readme",
+  "dependencies": {
+    "firebase": "^8.8.1"
+  }
+}
