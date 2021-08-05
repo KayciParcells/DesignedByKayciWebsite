@@ -1,4 +1,5 @@
-'use strict';
+import firebase from 'firebase/app';
+import 'firebase/storage';
 
 var storage = firebase.storage();
 var pathReference = storage.ref("flamelink/media/Composition-01.jpg");
