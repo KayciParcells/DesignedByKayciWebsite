@@ -4,7 +4,7 @@ var domAboutImage = document.getElementById("#aboutImage");
 
 window.onload = function () {
     storageRef.getDownloadURL().then(function(url) {
+    domAboutImage.setAttribute('src', url);
     console.log(url);
-    domAboutImage.src = url;
     });
 };
