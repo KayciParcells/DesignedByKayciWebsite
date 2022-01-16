@@ -1,108 +1,108 @@
 body {
-    background-color: #ffffff; /*#F2E6D8;*/
-    font-family: proxima-nova, input-mono, monospace;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #333;
+  background-color: #ffffff; /*#F2E6D8;*/
+  font-family: proxima-nova, input-mono, monospace;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #333;
 }
 
 h1 {
-    font-family: museo-slab, proxima-nova, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
+  font-family: museo-slab, proxima-nova, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 h2 {
-    font-family: museo-slab, proxima-nova, sans-serif;
-    font-size: 1.4rem;
+  font-family: museo-slab, proxima-nova, sans-serif;
+  font-size: 1.4rem;
 }
 
 h3 {
-    font-family: proxima-nova, input-mono, monospace;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.2rem;
+  font-family: proxima-nova, input-mono, monospace;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 .heading {
-    padding-left: 30%;
-    padding-right: 30%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .navigation .navbar-brand-orange {
-    color: #f2714f;
-    font-family: jubilat, sans-serif;
-    font-size: 2rem;
+  color: #f2714f;
+  font-family: jubilat, sans-serif;
+  font-size: 2rem;
 }
 
 .navigation .navbar-brand {
-    color: #ffffff; /*#F2E6D8;*/
-    font-family: jubilat, sans-serif;
-    font-size: 2rem;
+  color: #f2714f; /*#F2E6D8;*/
+  font-family: jubilat, sans-serif;
+  font-size: 2rem;
 }
 
 .nav-link {
-    font-family: museo-slab, input-mono, monospace;
-    font-weight: 400;
+  font-family: museo-slab, input-mono, monospace;
+  font-weight: 400;
 }
 
 .nav-link:hover {
-    color: black;
+  color: black;
 }
 
 .footer-color {
-    background-color: #ffffff; /*#F2E6D8;*/
+  background-color: #ffffff; /*#F2E6D8;*/
 }
 
 a {
-    color: #333;
+  color: #333;
 }
 
 a:hover {
-    color: #f2714f;
-    text-decoration: none;
+  color: #f2714f;
+  text-decoration: none;
 }
 
 .color-block {
-    width: 0;
-    height: 0;
-    border-top: 100vw solid #f2714f;
-    border-left: 100vw solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 100vw solid #ffffff;
+  border-left: 100vw solid transparent;
 }
 
 .color-block-small {
-    border-top: 5vw solid #f2714f;
-    border-left: 5vw solid transparent;
-    top: 0px;
-    right: 0px;
+  border-top: 5vw solid #f2714f;
+  border-left: 5vw solid transparent;
+  top: 0px;
+  right: 0px;
 }
 
 .grey-hr {
-    border: none;
-    height: 1px;
-    background-color: #333;
+  border: none;
+  height: 1px;
+  background-color: #333;
 }
 
 .caption {
-    font-family: proxima-nova, input-mono, monospace;
-    font-size: .8rem;
-    font-style: italic;
+  font-family: proxima-nova, input-mono, monospace;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 .container {
-    margin: 0;
-    max-width: none;
+  margin: 0;
+  max-width: none;
 }
 
-.pagination-item{
-    font-family: museo-slab, input-mono, monospace;
-    font-weight: 100;
-    font-size: .9rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+.pagination-item {
+  font-family: museo-slab, input-mono, monospace;
+  font-weight: 100;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .pagination-item-next {
-    margin-left: auto;
-    justify-content: flex-end;
+  margin-left: auto;
+  justify-content: flex-end;
 }
