@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff; /*#F2E6D8;*/
-  font-family: proxima-nova, input-mono, monospace;
+  font-family: fieldwork, proxima-nova, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #333;
@@ -8,17 +8,18 @@ body {
 
 h1 {
   font-family: museo-slab, proxima-nova, sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 h2 {
-  font-family: museo-slab, proxima-nova, sans-serif;
-  font-size: 1.4rem;
+  font-family: fieldwork, museo-slab, proxima-nova, sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 h3 {
-  font-family: proxima-nova, input-mono, monospace;
+  font-family: museo-slab, proxima-nova, sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 1.2rem;
