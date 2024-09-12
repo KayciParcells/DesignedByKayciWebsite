@@ -55,6 +55,11 @@ h3 {
   background-color: #ffffff; /*#F2E6D8;*/
 }
 
+.define-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 a {
   color: #333;
 }
