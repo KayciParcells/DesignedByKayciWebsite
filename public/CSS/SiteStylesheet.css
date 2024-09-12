@@ -1,5 +1,4 @@
 body {
-  background-color: #ffffff; /*#F2E6D8;*/
   font-family: fieldwork, proxima-nova, sans-serif;
   font-weight: 300;
   font-size: 1rem;
@@ -94,6 +93,7 @@ a:hover {
   margin-left: 13%;
   margin-right:13%;
 }
+
 .container {
   margin: 0;
   max-width: none;
