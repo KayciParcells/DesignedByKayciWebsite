@@ -90,6 +90,10 @@ a:hover {
   font-style: italic;
 }
 
+.body-container {
+  margin-left: 13%;
+  margin-right:13%;
+}
 .container {
   margin: 0;
   max-width: none;
@@ -106,4 +110,10 @@ a:hover {
 .pagination-item-next {
   margin-left: auto;
   justify-content: flex-end;
+}
+
+.color-box {
+  background-color: #f2714f;
+  opacity: .2;
+  border-radius: 7px;
 }
