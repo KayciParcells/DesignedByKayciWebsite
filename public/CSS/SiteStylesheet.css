@@ -113,7 +113,7 @@ a:hover {
 }
 
 .color-box {
-  background-color: rgba(141, 79, 242, 0.3);
+  background-color: #fea087;
   border-radius: 13px;
   padding: 1rem;
 }
@@ -126,5 +126,5 @@ a:hover {
 .category-text {
   text-transform: uppercase;
   font-weight: 500;
-  color: #f2714f;
+  color: #005465;
 }
