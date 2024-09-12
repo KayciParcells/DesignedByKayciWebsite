@@ -24,6 +24,22 @@ h3 {
   font-size: 1.2rem;
 }
 
+.pull-quote {
+  font-family: museo-slab;
+  font-weight: 500;
+  font-size: 2.7rem;
+  color: #826ec3;
+  text-align: center;
+}
+
+.pull-quote-author {
+  font-family: fieldwork;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: right;
+}
+
 .heading {
   padding-left: 30%;
   padding-right: 30%;
