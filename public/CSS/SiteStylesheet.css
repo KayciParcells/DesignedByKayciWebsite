@@ -113,9 +113,19 @@ a:hover {
 }
 
 .color-box {
-  width: 700px;
-  height: 200px;
-  background-color: #f2714f;
-  opacity: .2;
-  border-radius: 7px;
+  background-color: rgba(141, 79, 242, 0.3);
+  border-radius: 13px;
+  padding: 1rem;
+}
+
+.caps-text {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.category-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #f2714f;
 }
