@@ -113,6 +113,8 @@ a:hover {
 }
 
 .color-box {
+  width: 700px;
+  height: 200px;
   background-color: #f2714f;
   opacity: .2;
   border-radius: 7px;
