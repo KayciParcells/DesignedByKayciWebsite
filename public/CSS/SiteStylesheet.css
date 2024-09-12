@@ -90,9 +90,8 @@ a:hover {
   font-style: italic;
 }
 
-.container-width {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.container {
+  margin: 0;
   max-width: none;
 }
 
