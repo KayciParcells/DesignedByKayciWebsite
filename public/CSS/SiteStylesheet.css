@@ -114,8 +114,9 @@ a:hover {
 
 .color-box {
   background-color: #fea087;
-  border-radius: 13px;
+  border-radius: 3px;
   padding: 1rem;
+  height: auto;
 }
 
 .caps-text {
@@ -125,10 +126,11 @@ a:hover {
 
 .category-text {
   text-transform: uppercase;
-  font-weight: 500;
-  color: #005465;
+  font-weight: 400;
+  color: #f2714f;
 }
 
-.img-bg-purple {
-  background-color: #826EC3;
+.full-width-bg-color {
+  height: 100%;
+  background: linear-gradient(0deg, #826ec346 75%, #ffffff 25%);
 }
