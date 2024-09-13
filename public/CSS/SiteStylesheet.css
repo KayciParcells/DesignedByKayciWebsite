@@ -150,3 +150,7 @@ a:hover {
   height: 100%;
   background: linear-gradient(0deg, #826ec346 75%, #ffffff 25%);
 }
+
+.drop-shadow {
+  filter: drop-shadow(rgba(220, 220, 220, 0.475) -.7rem .7rem 7px);
+}
