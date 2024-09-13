@@ -151,6 +151,11 @@ a:hover {
   background: linear-gradient(0deg, #826ec346 75%, #ffffff 25%);
 }
 
+.bg-color {
+  height: 100%;
+  background-color: #fea087;
+}
+
 .drop-shadow {
   filter: drop-shadow(rgba(220, 220, 220, 0.475) -.7rem .7rem 7px);
 }
