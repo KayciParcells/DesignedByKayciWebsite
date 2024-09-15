@@ -131,7 +131,7 @@ a:hover {
 .color-box {
   background-color: #fea087;
   border-radius: 3px;
-  padding: 1rem;
+  padding: 1.8rem;
   height: auto;
 }
 
@@ -147,6 +147,11 @@ a:hover {
 }
 
 .full-width-bg-color {
+  height: 100%;
+  background: linear-gradient(0deg, #826ec346 100%, #ffffff 0%);
+}
+
+.bg-purple-75 {
   height: 100%;
   background: linear-gradient(0deg, #826ec346 75%, #ffffff 25%);
 }
