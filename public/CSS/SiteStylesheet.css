@@ -5,6 +5,11 @@ body {
   color: #333;
 }
 
+.row {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
 h1 {
   font-family: museo-slab, proxima-nova, sans-serif;
   font-size: 3rem;
