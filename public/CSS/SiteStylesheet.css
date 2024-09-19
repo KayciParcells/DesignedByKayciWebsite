@@ -95,6 +95,10 @@ h3 {
   text-decoration: underline solid #f2714f 20%;
 }
 
+.nav-link:active {
+  text-decoration: underline solid #333 20%;
+}
+
 .footer-color {
   background-color: #ffffff; /*#F2E6D8;*/
 }
