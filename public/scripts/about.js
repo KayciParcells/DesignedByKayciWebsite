@@ -1,4 +1,4 @@
-import firebase from "/firebase/app";
+/*import firebase from "/firebase/app";
 import "/firebase/storage";
 
 var storage = firebase.storage();
@@ -8,4 +8,4 @@ window.onload = function () {
         storageRef.getDownloadURL().then(function(url) {
           console.log(url);
         });
-    };
+    };*/
