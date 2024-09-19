@@ -1,8 +1,21 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: fieldwork, proxima-nova, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    font-size:1.3rem;
+  }
 }
 
 .row {
@@ -54,21 +67,32 @@ h3 {
   color: #f2714f;
   font-family: jubilat, sans-serif;
   font-size: 2rem;
+  text-decoration: none;
+}
+
+.navigation .navbar-brand-orange:hover {
+  color: #333;
+  font-family: jubilat, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .navigation .navbar-brand {
-  color: #f2714f; /*#F2E6D8;*/
+  color: #f2714f;
   font-family: jubilat, sans-serif;
-  font-size: 2rem;
+  font-size:2rem;
+  text-decoration: none;
 }
 
 .nav-link {
   font-family: museo-slab, input-mono, monospace;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: black;
+  text-decoration: underline solid #f2714f 20%;
 }
 
 .footer-color {
@@ -76,7 +100,8 @@ h3 {
 }
 
 a {
-  color: #333;
+  color: #f2714f;
+  text-decoration: underline solid 2px;
 }
 
 a:hover {
@@ -120,12 +145,18 @@ a:hover {
   max-width: none;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .pagination-item {
   font-family: museo-slab, sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
   letter-spacing: 4px;
   text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
 }
 
 .pagination-item-next {
