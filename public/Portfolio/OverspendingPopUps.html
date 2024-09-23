@@ -98,7 +98,7 @@
         </div>
       </div>
 
-      <div class="row pt-md-3 d-none d-md-block">
+      <div class="row pt-md-3">
         <div class="col-12 mb-2">
           <h2>Expected Logic Between Pop-Ups</h2>
           <img
@@ -109,20 +109,31 @@
         </div>
       </div>
 
+      <div class="row pt-md-3">
+        <div class="col-12 mb-2">
+          <img
+              src="https://lh3.googleusercontent.com/pw/AP1GczPN9SM8bbkDVrH0SBLvkAAoIDooq7CC3AqvL519wJeWxiulMFab9dspP_G-RfI71Wjz5tEvktE_Gd3p_5IgY-xZhTqDCIatfytlxdLyjeqG75OHpO8=w2400"
+              alt="gif of interactive logic showing how fields appear when PO Amount is added"
+              class="img-fluid display-block shadow"
+            />
+        </div>
+      </div>
+
       <div class="row pt-3 pt-lg-5">
-        <div class="col-12 col-md-6 order-1">
+        <div class="img-column order-1 col-12 col-md-2 mb-4">
+          <div>
+            
+          </div>
+        </div>
+        <div class="col-12 col-md-8 order-2">
           <h2>MVP Proposal</h2>
           <p>
             Once the logic of the field was determined and the results of heatmap analysis were available, I was able to look into how we could add this feature and make a few improvements in the process. Firstly, I determined that a checkbox would be the best input option and following best practices, it should be labled with positive verbage ("allow overspending") versus negative verbage ("do not allow overspending") due to the cognitive complexities of the negative language essentially creating a double negative when unchecked. Also, from the Hotjar findings, it made sense to align all fields to the left and also utilize top labels to decrease eye movement. In order to make the fields even more aligned, I suggested we change the one yes/no radio button question that had been on the right, into a checkbox that we could put with the other fields on the left. I had also checked with the requesters and developers to see if there had been a design reason for that one question being added on the right, but learned it was just an easy place for a developer to add it when they had been asked to add it previously. This also made it so that question remained visible at all times because during my analysis, I noticed if a user went to select "change" under Billing Address, then that question was covered up and unable to be answered/changed again. Although I saw many UX issues with the Billing Address section, I did not address those issues with the MVP to add in this feature since Hotjar heatmaps had suggested that it was a significantly lesser touched area. Therefore, we decided to prioritize the changes that impacted the majority of our customers first and were also lower in effort.
           </p>
         </div>
-        <div class="img-column order-2 col-12 col-md-6 mb-4 drop-shadow">
+        <div class="img-column order-3 col-12 col-md-2 mb-4">
           <div>
-            <img
-              src="https://lh3.googleusercontent.com/pw/AP1GczPN9SM8bbkDVrH0SBLvkAAoIDooq7CC3AqvL519wJeWxiulMFab9dspP_G-RfI71Wjz5tEvktE_Gd3p_5IgY-xZhTqDCIatfytlxdLyjeqG75OHpO8=w2400"
-              alt="gif of interactive logic showing how fields appear when PO Amount is added"
-              class="img-fluid display-block"
-            />
+            
           </div>
         </div>
       </div>
@@ -131,7 +142,7 @@
         <div class="col-12 col-md-6 order-2">
           <h2>Changes to Manage PO</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dapibus justo, quis viverra diam. Integer sit amet interdum nibh, non rhoncus tortor. Aliquam accumsan elementum nisl, mattis rhoncus mauris elementum at. Sed non placerat ex. Ut vestibulum ut nibh eget volutpat. Etiam cursus, ante a tincidunt ultricies, velit nisl tempor nisi, nec sagittis magna felis ac magna. Suspendisse quis justo et ipsum consectetur ornare vel nec ligula. Praesent ultricies laoreet tincidunt. In nisi dolor, pretium a mauris ac, aliquam rutrum augue. Sed sit amet quam quis lectus bibendum porttitor at vel dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            For the Manage PO pop-up, I concluded that our customers may have a better experience if the locked down fields aren't in locked-down input format, but rather just plain text in the pop-up. That way we aren't implying that if something happens then these fields would be editable (which the never are). Additionally, I was able to find out that a majority of users were using this pop-up to change their PO Amount. Therefore, it made sense to make the current PO amount more prominent on the page. Additionally, I considered the edge cases, not only for when the allow overspending checkbox should be shown, but also ensuring we had an error message created for the scenario if a customer wanted to remove overspending from their PO but currently had an overspend PO.
           </p>
         </div>
         <div class="img-column order-1 col-12 col-md-6 mb-4 pb-2 drop-shadow">
@@ -154,7 +165,7 @@
         <div class="col-12 col-md-8 order-2">
           <h2>Future State Updates</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dapibus justo, quis viverra diam. Integer sit amet interdum nibh, non rhoncus tortor. Aliquam accumsan elementum nisl, mattis rhoncus mauris elementum at. Sed non placerat ex. Ut vestibulum ut nibh eget volutpat. Etiam cursus, ante a tincidunt ultricies, velit nisl tempor nisi, nec sagittis magna felis ac magna. Suspendisse quis justo et ipsum consectetur ornare vel nec ligula. Praesent ultricies laoreet tincidunt. In nisi dolor, pretium a mauris ac, aliquam rutrum augue. Sed sit amet quam quis lectus bibendum porttitor at vel dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            The Billing Address section was incredibly problematic, but in talking with developers, I knew this would need to become its own request. Upon initial investigation, I found out that the "Change" button that was next to the primary billing address actually added an overlay to the pop-up that had all the fields to add a new billing address. The most problematic part was that once you clicked that button, you could never get back to the screen to select an existing billing address if you didn't want to add a new one. Therefore, in my future state proposal for this section of the pop-up I ensured we improved naming to make it very clear what each section was for, and rather than having a button, I created "Select Existing Address" and "Add New Address" tabs that the customer could always select between.
           </p>
         </div>
         <div class="img-column order-3 col-12 col-md-2 mb-4">
@@ -164,7 +175,7 @@
         </div>
       </div>
 
-      <div class="row pt-md-3 d-none d-md-block">
+      <div class="row pt-md-3">
         <div class="col-12 mb-2">
           <img
               src="https://lh3.googleusercontent.com/pw/AP1GczNaUu8NlPBsHRidckLbc-nllqGdkL7CzZqSKGMPsx2Y8tn7szItL0HHXWVKYZmsPRiNaSwjoQbiON07bFB4JyEcg_hVcCEmvvwdcIfxaz2mDdt2Zeg=w2400"
