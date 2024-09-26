@@ -60,7 +60,7 @@
         <div class="col-12 col-md-6 order-1">
           <h2>The Request</h2>
           <p>
-            A Project Manager added me onto their project, asking that I help them implement a solution that would give their ecommerce customers the ability to allow overspending on their Purchase Orders in an easy and intuitive manner. In our initial discussion of the ask, we knew we would be making changes to the "Add New Purchase Order" pop-up and the checkout page, but further analysis of the application also led us to realize that a change on the "Manage Purchase Order" pop-up would also be needed.
+            A Project Manager added me to their project, asking that I help them implement a solution that would give their eCommerce customers the ability to allow overspending on their Purchase Orders easily and intuitively. In our initial discussion of the ask, we knew we would be making changes to the "Add New Purchase Order" pop-up and the checkout page, but further analysis of the application also led us to realize that a change on the "Manage Purchase Order" pop-up would also be needed. Additionally, the project manager wanted to improve the UI of any areas we touched so long as the changes were low effort for the developers.
           </p>
         </div>
         <div class="img-column order-2 col-12 col-md-6 mb-4">
@@ -88,7 +88,7 @@
         <div class="col-12 col-md-8 order-2">
           <h2>Analysis</h2>
           <p>
-            Before beginning any design work, I pulled up Hotjar heatmaps for both pop-ups. From this I was able to find a few helpful insights. On the "Add New Purchase Order" pop-up it was clear that there wasn't nearly as much interaction on the right side of the pop-up as the left (for both move and click data). This led me to believe that the address field didn't often need to be changed away from the default primary address, but was inconclusive on if customers were overlooking the one radio button question on that side or if they didn't need to change it from it's default "no" very often. Finally, on the "Manage Purchase Order" pop-up it was very clear that customers were frequently clicking on locked down fields (such as the one for PO Name and number) in addition to the fields that were editable. In short, these insights led me to suggest design and layout changes based on the data gathered. Additionally, from speaking with the requesters, I was able to lay out the expected functionality of the pop-ups based on the decisions of the customer, since we knew we only wanted to show the field to allow overspending when it was applicable.
+            Before beginning any design work, I pulled up Hotjar heatmaps for both pop-ups. From this, I was able to find a few helpful insights. On the "Add New Purchase Order" pop-up it was clear that there wasn't nearly as much interaction on the right side of the pop-up as on the left (for both move and click data). This led me to believe that the address field didn't often need to be changed away from the default primary address, but it was inconclusive on whether customers were overlooking the one radio button question on that side or if they didn't need to change it from its default "no" very often. Finally, on the "Manage Purchase Order" pop-up it was very clear that customers were frequently clicking on locked-down fields (such as the one for PO Name and number) in addition to the editable fields. In short, these insights led me to suggest design and layout changes based on the data gathered. Additionally, from speaking with the requesters, I was able to lay out the expected functionality of the pop-ups based on the decisions of the customer, since we knew we only wanted to show the field to allow overspending when it was applicable.
           </p>
         </div>
         <div class="img-column order-3 col-12 col-md-2 mb-4">
@@ -111,6 +111,7 @@
 
       <div class="row pt-md-3">
         <div class="col-12 mb-2">
+          <h2>MVP Proposal</h2>
           <img
               src="https://lh3.googleusercontent.com/pw/AP1GczPN9SM8bbkDVrH0SBLvkAAoIDooq7CC3AqvL519wJeWxiulMFab9dspP_G-RfI71Wjz5tEvktE_Gd3p_5IgY-xZhTqDCIatfytlxdLyjeqG75OHpO8=w2400"
               alt="gif of interactive logic showing how fields appear when PO Amount is added"
@@ -120,30 +121,14 @@
       </div>
 
       <div class="row pt-3 pt-lg-5">
-        <div class="img-column order-1 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-8 order-2">
-          <h2>MVP Proposal</h2>
-          <p>
-            Once the logic of the field was determined and the results of heatmap analysis were available, I was able to look into how we could add this feature and make a few improvements in the process. Firstly, I determined that a checkbox would be the best input option and following best practices, it should be labled with positive verbage ("allow overspending") versus negative verbage ("do not allow overspending") due to the cognitive complexities of the negative language essentially creating a double negative when unchecked. Also, from the Hotjar findings, it made sense to align all fields to the left and also utilize top labels to decrease eye movement. In order to make the fields even more aligned, I suggested we change the one yes/no radio button question that had been on the right, into a checkbox that we could put with the other fields on the left. I had also checked with the requesters and developers to see if there had been a design reason for that one question being added on the right, but learned it was just an easy place for a developer to add it when they had been asked to add it previously. This also made it so that question remained visible at all times because during my analysis, I noticed if a user went to select "change" under Billing Address, then that question was covered up and unable to be answered/changed again. Although I saw many UX issues with the Billing Address section, I did not address those issues with the MVP to add in this feature since Hotjar heatmaps had suggested that it was a significantly lesser touched area. Therefore, we decided to prioritize the changes that impacted the majority of our customers first and were also lower in effort.
-          </p>
-        </div>
-        <div class="img-column order-3 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="row pt-3 pt-lg-5">
         <div class="col-12 col-md-6 order-2">
-          <h2>Changes to Manage PO</h2>
-          <p>
-            For the Manage PO pop-up, I concluded that our customers may have a better experience if the locked down fields aren't in locked-down input format, but rather just plain text in the pop-up. That way we aren't implying that if something happens then these fields would be editable (which the never are). Additionally, I was able to find out that a majority of users were using this pop-up to change their PO Amount. Therefore, it made sense to make the current PO amount more prominent on the page. Additionally, I considered the edge cases, not only for when the allow overspending checkbox should be shown, but also ensuring we had an error message created for the scenario if a customer wanted to remove overspending from their PO but currently had an overspend PO.
-          </p>
+          <h2>Manage Purchase Order Updates</h2>
+          <ul>
+            <li>Only editable fields are displayed as input fields</li>
+            <li>Current purchase order amount made more prominent</li>
+            <li>Error messaging added for Allow Overspending edge cases</li>
+            <li>Close button changed to secondary button styling</li>
+          </ul>
         </div>
         <div class="img-column order-1 col-12 col-md-6 mb-4 pb-2 drop-shadow">
           <div>
@@ -156,27 +141,9 @@
         </div>
       </div>
 
-      <div class="row pt-3 pt-lg-5">
-        <div class="img-column order-1 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-8 order-2">
-          <h2>Future State Updates</h2>
-          <p>
-            The Billing Address section was incredibly problematic, but in talking with developers, I knew this would need to become its own request. Upon initial investigation, I found out that the "Change" button that was next to the primary billing address actually added an overlay to the pop-up that had all the fields to add a new billing address. The most problematic part was that once you clicked that button, you could never get back to the screen to select an existing billing address if you didn't want to add a new one. Therefore, in my future state proposal for this section of the pop-up I ensured we improved naming to make it very clear what each section was for, and rather than having a button, I created "Select Existing Address" and "Add New Address" tabs that the customer could always select between.
-          </p>
-        </div>
-        <div class="img-column order-3 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-      </div>
-
       <div class="row pt-md-3">
         <div class="col-12 mb-2">
+          <h2>Future State: Billing Address Updates</h2>
           <img
               src="https://lh3.googleusercontent.com/pw/AP1GczNaUu8NlPBsHRidckLbc-nllqGdkL7CzZqSKGMPsx2Y8tn7szItL0HHXWVKYZmsPRiNaSwjoQbiON07bFB4JyEcg_hVcCEmvvwdcIfxaz2mDdt2Zeg=w2400"
               alt="gif of future updates to billing address"

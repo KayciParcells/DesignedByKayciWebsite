@@ -64,13 +64,15 @@
       </div>
 
       <div class="row pt-3">
-        <div class="col-12 col-md-7 order-2">
+        <div class="col-12 col-md-7 order-2 d-flex align-items-center">
+          <div>
           <h2>The Request</h2>
           <p>
-            A project manager reached out to me after being made aware of a series of customer complaints from new customers unable to access their accounts. Once the customer had completed the registration form and attempted to login, they were recieving a "user status inactive" error message. The project manager orignally asked if we could improve our error message on login to inform customers that they had not verified their email address and could not log into their new account until their email has been verified. I said we could certainly look into the error messaging, but suggested that we take a look at the entire customer journey to see if we could help the customer before they reached an error message. Additionally, I reviewed our heat maps and customer feedback in hotjar to gain furhter insights into the issue our customers were facing.
+            A project manager contacted me after being made aware of a series of customer complaints from new customers unable to access their accounts. Once the customer had completed the registration form and attempted to log in, they were receiving a "user status inactive" error message. The project manager originally asked if we could improve our error message to better guide the customer, but once we walked through the customer journey, it became clear we could help our customers earlier in the flow by utilizing typography on the confirmation page. In addition to walking through the flow, I reviewed our heatmaps and customer feedback in Hotjar to gain further insights into the issues our customers were facing.
           </p>
         </div>
-        <div class="img-column order-1 col-12 col-md-5 mb-4">
+        </div>
+        <div class="img-column order-1 col-12 col-md-5 mb-4 d-flex align-items-center">
           <div>
             <div class="color-box">
               <p><span class="caps-text">Primary Goal:</span> Make it more obvious to customers that they need to verify their email address after creating an account</p>
@@ -93,15 +95,15 @@
       </div>
 
       <div class="row pt-3 pt-lg-5">
-        <div class="col-12 col-md-6 order-2">
-          <div class="">
+        <div class="col-12 col-md-4 order-1 d-flex align-items-center">
+          <div>
           <h2>Mapping the Customer Journey</h2>
           <p>
-            After understanding the problem our customers were facing and discussing the expected user flow, I walked through the flow to map the customer journey and try to find any pain points. It quickly became clear how our customers were missing the step to verify their email. Although there was text on the confirmation page that clearly stated that the next step was to verify their email address, the hierarchy of the text and the overall layout did not make it easy for a customer to skim the page and understand that that was the case. It actually implied that they likely were done by having the "Thank you" as the most prominent text. These insights, along with reviewing Hotjar heatmap movement data for this page, led me to believe that some changes on the confirmation page may lead to our new customers having a better first experience with us.
+            By walking through the customer journey, it became clear that a customer might not see that they needed to verify their email address before logging into their new account.
           </p>
         </div>
         </div>
-        <div class="img-column order-1 col-12 col-md-6 mb-4 pb-2">
+        <div class="img-column order-2 col-12 col-md-8 mb-4 d-flex align-items-center">
           <div>
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczOKvtkgrxHH_ZIjBzgsABo6cSYCCRtpvyAW-AKxw9c3l-p6PiKM2_0Z8CEMEtMMG3kftc_taujSEmwM-Zm0P7DfaIH1ihprbhnv4_N390G0KXyTLF4=w2400"
@@ -114,111 +116,16 @@
 
       <div class="row pt-3">
         <div class="col-12 mb-2">
+          <h2>Final Design</h2>
           <img
-              src="https://lh3.googleusercontent.com/pw/AP1GczNjDqoqhn0SKpnWvEzhGM7jgW48p-BPP3T8eoXzIDl2AugjBppeLR0Rja4tyQ3fx6HIzJKa2nyd66VS6Mnn787Gb_eI4aAmkX2vEZlwfxqw4alYeIA=w2400"
-              alt="Showing use of hierarchy to improve message"
-              class="img-fluid display-block shadow"
-            />
-        </div>
-      </div>
-
-      <div class="row pt-3 pt-lg-5">
-        <div class="img-column order-1 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-8 order-2">
-          <h2>Utilize Heirarchy to Emphasize Next Steps</h2>
-          <p>
-            Based on the findings from the customer journey map, the first change I looked into was how we could utilize hierarchy to make the next steps more obvious. This led me to adding a header that was large and bold stating "Verify Email Address". Additionally, when reading through the text we had on this page, it became clear that most of the text was help text only for customers who couldn't find the verification email. Therefore, I also found it necessary to add a smaller heading above the support text for those who couldn't find the email, allowing those who had the email to know they didn't have to read that section of text. Finally, I opted to un-bold the "Thank you" line to hopefully decrease the chances of customers thinking they had completed all the necessary steps.
-          </p>
-        </div>
-        <div class="img-column order-3 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="row pt-md-3">
-        <div class="col-12 mb-2">
-          <img
-              src="https://lh3.googleusercontent.com/pw/AP1GczPhDSSqnstR1ljJHfM276JAoF001hMufhpUUErSqqRlWKLQbw1z9pLMDaT1ljOAFUoTCRLGh5IrrgDpQY-FHwv3DQgwDNssGZuBP3pRE5HUM8ZIjfY=w2400"
-              alt="Showing how contact information is links that are bold and underlined"
-              class="img-fluid display-block shadow"
-            />
-        </div>
-      </div>
-
-      <div class="row pt-3 pt-lg-5">
-        <div class="img-column order-1 col-12 col-md-2 mb-4 drop-shadow">
-          <div>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-8 order-2">
-          <h2>Make Contact Information Clickable</h2>
-          <p>
-            As a best practice, I also suggested to our stakeholders and developers that we turn our contact information into links to make it more convienent for those needing to contact us to do so. Additionally, by making these items links, they aquire our link styling which also aided in them standing out for those looking for contact information or help.
-          </p>
-        </div>
-        <div class="img-column order-3 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="row pt-3 pt-lg-5">
-        <div class="col-12 col-md-6 order-2">
-          <h2>Limit Width of Column on Desktop</h2>
-          <p>
-            Finally, in order to make the text on the confirmation page more desireable to read on desktop computers, I suggested we limit the column width of the text so that it was no longer stretching full width. This would make the reading of the text easier due to the eye movement from one line to the next being a shorter distance.
-          </p>
-        </div>
-        <div class="img-column order-1 col-12 col-md-6 mb-4 pb-2 drop-shadow">
-          <div>
-            <img
-              src="https://lh3.googleusercontent.com/pw/AP1GczN-XzgRfWmgUc_fVJZW5LPY2ae1__qhdA1lgUYo9TtAL4osaxoF4oyq06U0aPXjFTgZOCKdY2UC26H0gNwERNJzTxN39D0bpJ0swxXtQf44_j4qeAs=w2400"
-              alt="Showing limiting line lenght of body text on desktop for easier reading"
+              src="https://lh3.googleusercontent.com/pw/AP1GczOE62647UISSkEult0MRiAIPepevAdw7RqQkfomCVJgeOAkBVgG1w2QhkFzR6lYLnfnFKcYrga2nUNeHt3hbOZ80QIc8lRaAipZdb7GCapV7Zcfj_g=w2400"
+              alt="Final design of the registration confirmation page with typography improvements"
               class="img-fluid display-block"
             />
-          </div>
         </div>
       </div>
-
-      <div class="row pt-3 pt-lg-5">
-        <div class="img-column order-1 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-8 order-2">
-          <h2>What About the Error Message?</h2>
-          <p>
-            I did reach out to our lead developer on this request to discuss our capabilities with adjusting the error message to be a bit more clear and what information we had to possibly make a more targeted error message for this group of customers. Through our discussion I learned this generic error message was used for all customers who weren't allowed into their account and limited information was available on the backend for them to target this customer base. Additionally they believed that the effort to make a change to this error message would be considerable. Given my development background, I believed there could be more creative solutions out there than what I was being told, but I did understand that it could be best to make this a separate request while monitoring the impact of our changes to the confirmation page.
-          </p>
-        </div>
-        <div class="img-column order-3 col-12 col-md-2 mb-4">
-          <div>
-            
-          </div>
-        </div>
       </div>
-
-      <div class="row pt-3">
-        <div class="col-12 mb-2">
-          <img
-            src="https://lh3.googleusercontent.com/pw/AP1GczOE62647UISSkEult0MRiAIPepevAdw7RqQkfomCVJgeOAkBVgG1w2QhkFzR6lYLnfnFKcYrga2nUNeHt3hbOZ80QIc8lRaAipZdb7GCapV7Zcfj_g=w2400"
-            alt="Final design of the registration confirmation page with typography improvements"
-            class="img-fluid display-block"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-5">
+    <div class="container px-5 mt-5">
       <div class="row pt-5 d-flex">
         <a href="WebsiteRedesign.html" class="pl-3 no-underline">
           <div class="pagination-item">

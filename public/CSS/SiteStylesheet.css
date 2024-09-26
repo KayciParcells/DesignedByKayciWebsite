@@ -9,6 +9,10 @@ body {
   color: #333;
 }
 
+.max-width {
+  max-width: 50%;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 12px;
@@ -16,11 +20,14 @@ body {
   body {
     font-size:1.3rem;
   }
+  .max-width {
+    max-width: 100%;
+  }
 }
 
 .row {
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 h1 {
@@ -40,6 +47,11 @@ h3 {
   font-weight: 700;
   font-size: 1.2rem;
   padding-top: 1.5rem;
+}
+
+li {
+  font-weight: 500;
+  padding-top: 1rem;
 }
 
 .pull-quote {
@@ -169,9 +181,14 @@ a:hover {
 }
 
 .color-box {
-  background-color: #fea087;
-  border-radius: 3px;
-  padding: 1.8rem;
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-color: #333;
+  border-left-width: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .1rem;
   height: auto;
 }
 
@@ -188,7 +205,7 @@ a:hover {
 
 .full-width-bg-color {
   height: 100%;
-  background: linear-gradient(0deg, #826ec346 100%, #ffffff 0%);
+  background: linear-gradient(0deg, #f8f8fa 100%, #ffffff 0%);
 }
 
 .bg-purple-75 {
