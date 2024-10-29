@@ -87,9 +87,13 @@
         </div>
         <div class="col-12 col-md-8 order-2">
           <h2>Analysis</h2>
-          <p>
-            Before beginning any design work, I pulled up Hotjar heatmaps for both pop-ups. From this, I was able to find a few helpful insights. On the "Add New Purchase Order" pop-up it was clear that there wasn't nearly as much interaction on the right side of the pop-up as on the left (for both move and click data). This led me to believe that the address field didn't often need to be changed away from the default primary address, but it was inconclusive on whether customers were overlooking the one radio button question on that side or if they didn't need to change it from its default "no" very often. Finally, on the "Manage Purchase Order" pop-up it was very clear that customers were frequently clicking on locked-down fields (such as the one for PO Name and number) in addition to the editable fields. In short, these insights led me to suggest design and layout changes based on the data gathered. Additionally, from speaking with the requesters, I was able to lay out the expected functionality of the pop-ups based on the decisions of the customer, since we knew we only wanted to show the field to allow overspending when it was applicable.
-          </p>
+          <div>
+            Before beginning any design work, I pulled up Hotjar heatmaps for both pop-ups. From this, I was able to find a few helpful insights.
+            <h3>Add New Purchase Order Pop-up</h3>
+            <div>It was clear that there wasn't nearly as much interaction on the right side of the pop-up as on the left (for both move and click data). This led me to believe that the address field didn't often need to be changed away from the default primary address, but it was inconclusive on whether customers were overlooking the one radio button question on that side or if they didn't need to change it from its default "no" very often. I also noted that that particular question would be better suited as a checkbox due to its opt-in, opt-out nature.</div>
+            <h3>Manage Purchase Order Pop-up</h3>
+            <div>Here, the heat maps showed that customers frequently clicked on locked-down fields (such as the one for PO Name and number) in addition to the editable fields. This led me to consider changing the locked-down fields so they do not look like input fields to reduce confusion about whether there might be a time when they can edit those fields here.</div>
+          </div>
         </div>
         <div class="img-column order-3 col-12 col-md-2 mb-4">
           <div>
@@ -100,7 +104,7 @@
 
       <div class="row pt-md-3">
         <div class="col-12 mb-2">
-          <h2>Expected Logic Between Pop-Ups</h2>
+          <h2>New Feature Logic Between Pop-Ups</h2>
           <img
               src="https://lh3.googleusercontent.com/pw/AP1GczO4hWmWsVt5ao2ydJXwpdCqcbHGnm7AnWty0PlNOj01kCFv8_l2x4XBZL7tFKvRmSE2mJuZfy1kDJR_aGypPw1fiFPzXeQD5HvOcXhwCszMb5gM1Ck=w2400"
               alt="Logic flow of expected results for all elements impacting the ability to allow overspending"
@@ -151,6 +155,28 @@
             />
         </div>
       </div>
+
+      <div class="row pt-3 pt-lg-5">
+        <div class="img-column order-1 col-12 col-md-2 mb-4">
+          <div>
+            
+          </div>
+        </div>
+        <div class="col-12 col-md-8 order-2">
+          <h2>Reasoning</h2>
+          <p>
+            Although the billing address side of the pop-up had usability issues with the "Change" button not being clear as to its intent to take the user to add a new address along with the issue that if a customer selected that button, then they could not get back to the radio button selections of billing address, fixing this section was delayed to a future iteration. This was primarily driven by factors such as the development effort needed for the new change and the customer data showing that the billing address is interacted with considerably less than the other inputs within the pop-up.
+          </p>
+        </div>
+        <div class="img-column order-3 col-12 col-md-2 mb-4">
+          <div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
 
     <div class="container px-5">
