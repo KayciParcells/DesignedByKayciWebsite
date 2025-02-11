@@ -6,7 +6,7 @@ body {
   font-family: fieldwork, proxima-nova, sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  color: #333;
+  color: #555;
 }
 
 .max-width {
@@ -38,20 +38,75 @@ h1 {
 
 h2 {
   font-family: fieldwork, museo-slab, proxima-nova, sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 h3 {
   font-family: museo-slab, proxima-nova, sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1.6rem;
   padding-top: 1.5rem;
+  padding-bottom:1.2rem;
+}
+
+h4 {
+  font-family: fieldwork, museo-slab, proxima-nova, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.emphasized-metrics {
+  font-family: museo-slab, proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #826ec3;
+}
+
+.large-body {
+  font-family: fieldwork, museo-slab, proxima-nova, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #826ec3;
 }
 
 li {
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 1.3rem;
   padding-top: 1rem;
+}
+
+li::marker {
+  font-size:2rem;
+  line-height:0.1;
+}
+
+ol {
+  list-style: none;
+  color: #ccc;
+}
+
+ol li {
+  font-family: museo-slab, proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+li p {
+  font-family: fieldwork, proxima-nova, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #555;
+  padding-left: 60px;
+}
+
+.numbered-steps {
+  position: absolute;
+  line-height: 2rem;
 }
 
 button {

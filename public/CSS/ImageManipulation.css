@@ -91,3 +91,7 @@
 .hovereffect:hover h2, .hovereffect:hover p {
   opacity: 1;
 }
+
+.img-max-400 {
+  max-height: 400px;
+}
